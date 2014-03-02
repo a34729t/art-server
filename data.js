@@ -3,22 +3,19 @@ var artists = {
         "artist_name":null,
         "artist_bio": null,
         "artist_interview":null,
-        "aritst_alt_text":null,
-        "artist_preview_image":null
+        "image":null
     },
     1: {
         "artist_name":null,
         "artist_bio": null,
         "artist_interview":null,
-        "aritst_alt_text":null,
-        "artist_preview_image":null
+        "image":null
     },
     2: {
         "artist_name":null,
         "artist_bio": null,
         "artist_interview":null,
-        "aritst_alt_text":null,
-        "artist_preview_image":null
+        "image":null
     }
 };
 

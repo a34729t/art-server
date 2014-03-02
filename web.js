@@ -6,6 +6,7 @@ var data = require('./data');
 var app = express();
 
 app.use(logfmt.requestLogger());
+app.use(express.static(__dirname + '/public'));
 
 app.get("/:id([0-9]+)", function(req, res) {
     res.setHeader('Content-Type', 'application/json');
