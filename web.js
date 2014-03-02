@@ -22,6 +22,8 @@ app.get('/', function(req, res) {
 });
 
 app.get(':id', function(req, res) {
+    console.log("in id route");
+    console.log(id);
     var result = data[id]
     
     res.setHeader('Content-Type', 'application/json');
