@@ -14,11 +14,13 @@ var data = {
 
 app.use(logfmt.requestLogger());
 
+app.param('id', /^\d+$/);
+
 app.get('/', function(req, res) {
     res.send('Hello World!');
 });
 
-app.get(':id(/^\d+$/)', function(req, res) {
+app.get(':id', function(req, res) {
     var result = data[id]
     
     res.setHeader('Content-Type', 'application/json');
